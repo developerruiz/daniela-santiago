@@ -12,11 +12,42 @@
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-    <header style="display: flex; justify-content: flex-end; position: absolute; z-index: 99999; right: 0; color: #fff;" class="p-4">
-        <i class="fas fa-bars display-4"></i>
+    <header>
+        <!-- INICIO DE MENU -->
+        <nav class="" id="main-menu">
+            <div class="logo">
+            </div>
+            <div class="burger-menu" id="burger_menu">
+                <a href="#menu-movil">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="menu-movil" id="menu_movil">
+            <ul>
+                <a href="index.html">
+                    <li>INICIO</li>
+                </a>
+                <a href="quiensoy.html">
+                    <li>¿QUIÉN SOY?</li>
+                </a>
+                <a href="trabajos.html">
+                    <li>TRABAJO</li>
+                </a>
+                <a href="galeria.html">
+                    <li>GALERÍA</li>
+                </a>
+                <!-- <a href="contacto.html">
+                    <li>CONTACTO</li>
+                </a> -->
+            </ul>
+        </div>
+        <!-- FIN MENU MOVIL -->
     </header>
 
 
@@ -43,30 +74,45 @@
     </div> -->
 
     
-    <div class="coninater">
-
-            <div class="col-lg-12 d-flex flex-wrap">
-                <div class="col-lg-6 d-flex flex-wrap">
-                    <div class="col-lg-6">
-                        <img src="https://www.neo2.com/wp-content/uploads/2021/03/Mujeres-Ya-D%C3%ADa-Internacional-de-la-Mujer-2021-05.jpg" style="width: 80%; height: auto;"
-                        alt="">
+<div class="cont-quiensoy">
+        <div class="col-lg-12 d-flex flex-wrap align-items-center">
+            <div class="col-lg-6 m-0 d-flex justify-content-center imagenes">
+                
+                    
+                    <div class="imagen-dani">
+                        <img src="img/dany-index.jpeg" alt=""   >
                     </div>
-                    <div class="col-lg-6">
-                        <img src="https://www.neo2.com/wp-content/uploads/2021/03/Mujeres-Ya-D%C3%ADa-Internacional-de-la-Mujer-2021-05.jpg" style="width: 80%; height: auto;"
-                        alt="">
+                    <div class="imagen-dani">
+                        <img src="img/dany-quiensoy.jpeg" alt="">
+                    </div>
+    
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <div style="color: #fff;">
+                        <h2 style="color: #fff;">Daniela <span style="color: #f01687;">Santiago</span> Sánchez <br> 23 Años <br><span style="color: #f01687;">CDMX</span></h2>
+            
+                        <p>Artista visual con amplia experiencia dentro de varias ramas del Diseño Grafico. Apasionada con la comunicación visual en todos sus formatos y constantemente en la busqueda de nuevos conocimietnos para poder superarse y  alcanzar nuevas metas.</p>
                     </div>
                 </div>
-                <div class="col-lg-6  align-items-center">
-                    <div style="color: #fff;">
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem illo pariatur perspiciatis? Vel, reiciendis nobis soluta libero dicta quod non officiis itaque ad. At, asperiores!</p>
-                    </div>
-                    <a class="btn btn-info" href="index-presentation.html">work</a>
+                <div class="col-lg-12">
+                        <ul class="d-flex p-0 redes" style="list-style: none;">
+                            <li><a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fab fa-behance"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fab fa-whatsapp"></i>
+                            </a></li>
+                        </ul>
                 </div>
             </div>
-
+    
         </div>
-
+</div>
     
 
 
@@ -81,6 +127,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

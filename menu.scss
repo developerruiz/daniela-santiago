@@ -2,11 +2,64 @@
 $blanco: #fff;
 $color-principal: #ffa600;
 
+
+*{
+    font-family: sans-serif;
+}
 body{
     background: #121212!important;
 }
 .b-gblack{
     background: #121212!important;
+}
+.cont-quiensoy{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .imagenes{
+        top: 50px;
+        width: 100%;
+        height: 300px;
+        // background: #f3f0f0;
+        .imagen-dani{
+            width: 250px;
+            margin: 10px;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &:nth-child(1){
+                margin-top: -100px;
+            }
+        }
+    }
+}
+.redes{
+    li{
+        a{
+            i{
+                color: #f3f0f0 ;
+                padding: 10px 25px 10px 0;
+                font-size: 35px;
+                background: -webkit-linear-gradient(#f01687, #561b89);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+             
+                transition: all .2s ease-in;
+                -webkit-transition: all .2s ease-in;
+                -o-transition: all .2s ease-in;
+
+                &:hover{
+                    transform: scale(1.5);
+                    transition: all .2s ease-in;
+                    -webkit-transition: all .2s ease-in;
+                    -o-transition: all .2s ease-in;
+                }
+            }
+        }
+    }
 }
 header {
 
@@ -107,7 +160,8 @@ header {
         width: 100%;
         height: 100%;
         position: absolute;
-        background: #f1c078;
+        // background: #f1c078;
+        background: linear-gradient(to right, #f01687  , #561b89);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         z-index: 9;
         display: flex;
@@ -122,16 +176,17 @@ header {
         text-align: center;
 
         ul {
-
+            padding: 0;
             a {
                 text-decoration: none;
                 color: $color-principal;
 
                 li {
-                    color: #121212;
+                    color: #f3f0f0 ;
                     margin: 30px 0;
                     list-style: none;
                     font-size: 28px;
+                    font-weight: bold;
                 }
 
                 &.inactivo-temporal {
@@ -171,5 +226,8 @@ header {
 
     .menu {
         display: none !important;
+    }
+    .cont-quiensoy{
+        padding-top: 200px;
     }
 }
