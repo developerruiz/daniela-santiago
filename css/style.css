@@ -1,0 +1,51 @@
+.bg_color--1{
+    background-image: url(../img/section-2-bg.jpg)!important;
+    background-size: cover!important;
+    width: 100%;
+    height: auto;
+}
+.creative-people-inner{
+    display: flex;
+    align-items: center;
+}
+.creative-people-inner h2.heading {
+    display: block;
+    background: none!important;
+    color: #fff;
+    line-height: 1.42;
+    background-image: url(../img/pintura-boca.png)!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    max-width: 100%!important;
+    width: 100%!important;
+    height: 300px;
+}
+.david{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+}
+.david img{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+.ptb--150{
+    width: 100%;
+    height: auto;
+}
+.creative-gradient--1{
+    height: 800px;
+}
+.headroom--sticky.headroom--not-top{
+    background: #e9b323!important;
+    height: auto;
+}
+.header-default.headroom--not-top .header__wrapper .header-left .logo a img{
+    width: 90px!important;
+}
